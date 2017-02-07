@@ -1,0 +1,19 @@
+﻿Build started 2017/2/6 17:18:10.
+     1>Project "F:\AndroidPro\websocket\websocket\websocket.vcxproj" on node 2 (build target(s)).
+     1>Build:
+         ndk-build -C F:\AndroidPro\websocket\jni
+     1>Android NDK : warning : Unsupported source file extensions in F:/AndroidPro/websocket//jni/Android.mk for module websocket
+         Android NDK:   sha1.h base64.h    
+         make.exe: Entering directory `F:/AndroidPro/websocket/jni'
+         [x86] Compile        : websocket <= main.c
+         [x86] Executable     : websocket
+         [x86] Install        : websocket => libs/x86/websocket
+         adb push F:/AndroidPro/websocket//jni\..\libs\x86\websocket /data/local/tmp
+         3974 KB/s (99728 bytes in 0.024s)
+         adb shell "chmod 777 /data/local/tmp/websocket"
+         make.exe: Leaving directory `F:/AndroidPro/websocket/jni'
+     1>Done Building Project "F:\AndroidPro\websocket\websocket\websocket.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.42

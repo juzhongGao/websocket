@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAE175DC-0EA8-40A1-B469-EF67A4D8899D}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>ndk-build -C $(SolutionDir)jni</NMakeBuildCommandLine>
+    <NMakeOutput>websocket.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(NDK_INCLUDE);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>ndk-build -C $(SolutionDir)jni</NMakeBuildCommandLine>
+    <NMakeOutput>websocket.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\jni\Android.mk" />
+    <None Include="..\jni\Application.mk" />
+    <None Include="..\jni\config.h.in" />
+    <None Include="..\jni\Makefile.am" />
+    <None Include="..\jni\stamp-h2" />
+    <None Include="..\jni\websock_config.h.in" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jni\api.c" />
+    <ClCompile Include="..\jni\base64.c" />
+    <ClCompile Include="..\jni\conv.c" />
+    <ClCompile Include="..\jni\default_callbacks.c" />
+    <ClCompile Include="..\jni\frames.c" />
+    <ClCompile Include="..\jni\main.c" />
+    <ClCompile Include="..\jni\openssl.c" />
+    <ClCompile Include="..\jni\sha1.c" />
+    <ClCompile Include="..\jni\utf.c" />
+    <ClCompile Include="..\jni\util.c" />
+    <ClCompile Include="..\jni\websock.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\jni\api.h" />
+    <ClInclude Include="..\jni\base64.h" />
+    <ClInclude Include="..\jni\config.h" />
+    <ClInclude Include="..\jni\conv.h" />
+    <ClInclude Include="..\jni\default_callbacks.h" />
+    <ClInclude Include="..\jni\frames.h" />
+    <ClInclude Include="..\jni\sha1.h" />
+    <ClInclude Include="..\jni\types.h" />
+    <ClInclude Include="..\jni\utf.h" />
+    <ClInclude Include="..\jni\util.h" />
+    <ClInclude Include="..\jni\websock.h" />
+    <ClInclude Include="..\jni\websock_config.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

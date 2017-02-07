@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Build">
+      <UniqueIdentifier>{65468992-8230-403f-91fa-82994448fdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websocket">
+      <UniqueIdentifier>{4277a4d0-2587-4cea-a5ca-29e05bb98aef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <None Include="..\jni\config.h.in" />
+    <None Include="..\jni\Makefile.am" />
+    <None Include="..\jni\stamp-h2" />
+    <None Include="..\jni\websock_config.h.in" />
+    <None Include="..\jni\Android.mk">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\jni\Application.mk">
+      <Filter>Build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jni\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\api.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\frames.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\base64.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\default_callbacks.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\openssl.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\websock.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\sha1.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\utf.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\util.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\conv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\jni\api.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\websock_config.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\base64.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\config.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\default_callbacks.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\frames.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\sha1.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\types.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\utf.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\util.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\websock.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\conv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
